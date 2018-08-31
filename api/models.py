@@ -10,7 +10,7 @@ class Account(models.Model):
         null=True,
         blank=True,
         related_name='children',
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
     )
 
     # Methods
