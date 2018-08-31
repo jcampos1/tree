@@ -54,6 +54,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tree.urls'
+CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
     {

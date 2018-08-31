@@ -7,10 +7,10 @@ class Account(models.Model):
     name = models.CharField(max_length=128)
     parent = models.ForeignKey(
         "self",
-        null=True,
-        blank=True,
-        related_name='children',
         on_delete=models.CASCADE,
+        related_name='children',
+        null=True,
+        blank=True
     )
 
     # Methods
